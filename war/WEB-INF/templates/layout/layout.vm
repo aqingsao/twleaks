@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="">
+    <title>Leaks</title>
+    <link type="text/css" rev="StyleSheet" rel="StyleSheet" href="../../../stylesheets/main.css"/>
+    <script type="text/javascript" src="../../../javascripts/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#quickTalk textarea").click(function() {
+                $("#quickTalk textarea").height(120);
+            });
+            $("#quickTalk textarea").focusout(function() {
+                $("#quickTalk textarea").height(50);
+            });
+
+            $("#learnMore").click(function() {
+                if($("#learnMore").text() == "(了解)"){
+                    $("#learnMore").text("(关闭)");
+                    $("#more").show();
+                }
+                else{
+                    $("#learnMore").text("(了解)");
+                    $("#more").hide();                    
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1><a href="#">TW Leaks</a></h1>
+
+        <div id="nav-main">
+            <ul>
+                <li><a href="#">我的首页</a></li>
+                <li><a href="#">我的同事</a></li>
+                <li><a href="#">人品值</a></li>
+                <li><a href="#">SUI值</a></li>
+            </ul>
+        </div>
+        <div id="welcome">Welcome! user</div>
+    </div>
+
+    <div id="content">
+        <div id="main">
+            <div id="quickTalk" class="section">
+                <h2>写我想写，八我想八</h2>
+                <form action="" method="post" name="quickOne">
+                    <textarea name="comment" style="height:50px"></textarea>
+                </form>
+                <div class="btn">
+                    <input type="checkbox" name="anonymous" value="0">匿名发表</input>
+                    <span><a id="learnMore" href="#">(了解)</a></span>
+                    <span class="bn-flat"><input type="submit" value="Submit"></span>
+                </div>
+                <div id="more" style="display:none">
+                    我们建议你署名发表，这样可以增长人品值;如果选中匿名，系统承诺针对这个八卦不保留任何您的个人信息。
+                </div>
+            </div>
+
+            <div id="latestOnes" class="section">
+                <h2>Latest Ones</h2>
+                <div class="article">
+                    李剑去成都，从来没见过竹子，所以见了竹子很兴奋，高兴的让熊节帮他照相，并且特意凑近一颗竹子，拍了一个大头照。回去之后，发现竹子上刻着三个字：“大骗子”
+                    <div>
+                        <span><a href="#">顶(2个)</a></span>
+                        <span><a href="#">评论(3条)</a></span>
+                        <span><a href="#">分配SUI值</a></span>
+                    </div>
+                </div>
+            </div>
+            <div id="popularOnes" class="section">
+                <h2>Most popular Ones</h2>                   
+                <div class="article">
+                    Jackly Li Bashroom gate: Once Jacky Li went to bashroom, but forgot to take paper.
+                </div>
+            </div>
+        </div>
+        <div id="sideBar">
+            <div id="latest">
+                This is latest gossips
+            </div>
+            <div id="popular">
+                This is popular gossips  这个
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    CopyLeft xqzhang@thoughtworks.com 2010
+</div>
+</div>
+</body>
+</html>

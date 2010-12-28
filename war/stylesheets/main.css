@@ -1,0 +1,122 @@
+html {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+
+body {
+    font-family: georgia, serif;
+    background: url("/images/background-tile.png") repeat-x scroll 50% 0 #FFFFFF;
+    font: 13px/1.231 arial, helvetica, clean, sans-serif;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0 auto;
+    width: 950px;
+    min-width: 750px;
+}
+
+#header {
+    background: none repeat scroll 0 0 #0088AA;
+    font-family: verdana;
+    height: 56px;
+    width: 100%;
+    color: white;
+    margin: 0 0 30px;
+}
+
+#header h1 {
+    float: left;
+    margin: 0;
+}
+
+#header h1 a {
+    font-size: 150%;
+    padding-left: 15px;
+}
+
+#header a:link, #header a:active, #header a:visited, #header a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-main {
+    float: left;
+    padding-left: 50px;
+}
+
+#nav-main ul li {
+    display: inline-block;
+}
+
+#nav-main ul li a {
+    float: left;
+    font-size: 95%;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#nav-main ul li a:hover, #nav-main ul li a.current {
+    background-color: #0055AA;
+}
+
+#welcome {
+    float: right;
+    padding: 20px;
+}
+
+#footer {
+    text-align:center;
+    color:#807970;
+}
+
+#content {
+    min-height: 550px;
+}
+
+#main {
+    float: left;
+    padding-right: 40px;
+    width: 590px;
+}
+
+#sideBar {
+    float: right;
+    width: 310px;
+}
+
+#quickTalk textarea {
+    -moz-border-radius: 2px 2px 2px 2px;
+    border: 1px solid #CCCCCC;
+    width: 578px;
+    padding: 5px;
+}
+
+textarea {
+    font-size: 14px;
+}
+
+#quickTalk form {
+    margin: 0 0 5px;
+}
+
+#quickTalk .btn {
+    text-align: right;
+    width: auto;
+}
+
+#quickTalk .btn input {
+    font-size: 14px;
+    background: none repeat scroll 0 0 #F0F0F0 !important;
+    border-color: #B9B9B9 !important;
+    color: #999999 !important;
+}
+
+#main .section{
+    padding-bottom: 30px;
+}
